@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ── Dark theme (default) ── */
+  :root,
+  html.dark {
+    --color-bg:            #0f1117;
+    --color-surface:       #161b27;
+    --color-surface-2:     #1e2535;
+    --color-border:        rgba(255, 255, 255, 0.08);
+    --color-text:          #c9d1d9;
+    --color-text-muted:    #6e7681;
+    --color-text-heading:  #f0f6fc;
+    --color-primary:       #7c3aed;
+    --color-primary-hover: #6d28d9;
+    --color-nav-bg:        rgba(15, 17, 23, 0.85);
+    --color-section-alt:   #0d1018;
+  }
+
+  /* ── Light theme ── */
+  html.light {
+    --color-bg:            #f8fafc;
+    --color-surface:       #ffffff;
+    --color-surface-2:     #f1f5f9;
+    --color-border:        rgba(0, 0, 0, 0.08);
+    --color-text:          #374151;
+    --color-text-muted:    #6b7280;
+    --color-text-heading:  #111827;
+    --color-primary:       #7c3aed;
+    --color-primary-hover: #6d28d9;
+    --color-nav-bg:        rgba(248, 250, 252, 0.9);
+    --color-section-alt:   #f1f5f9;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ::-webkit-scrollbar       { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 99px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.22); }
+}
+
+@layer components {
+  /* ── Typing dots ── */
+  .typing-dot {
+    @apply inline-block w-2 h-2 rounded-full bg-violet-500;
+    animation: pulseDot 1.4s infinite ease-in-out;
+  }
+
+  /* ── Markdown inside AI bubble ── */
+  .md-body { @apply text-sm leading-relaxed; color: var(--color-text); }
+  .md-body p          { @apply mb-3 last:mb-0; }
+  .md-body h1         { @apply text-lg font-bold mb-2 mt-4; color: var(--color-text-heading); }
+  .md-body h2         { @apply text-base font-bold mb-2 mt-3; color: var(--color-text-heading); }
+  .md-body h3         { @apply text-sm font-semibold mb-1 mt-3; color: var(--color-text-heading); }
+  .md-body ul         { @apply list-disc pl-5 mb-3; }
+  .md-body ol         { @apply list-decimal pl-5 mb-3; }
+  .md-body li         { @apply mb-1; }
+  .md-body strong     { @apply font-semibold; color: var(--color-text-heading); }
+  .md-body a          { @apply text-violet-400 hover:underline; }
+  .md-body blockquote { @apply border-l-4 border-violet-500 pl-3 italic mb-3; color: var(--color-text-muted); }
+  .md-body code       { @apply text-xs font-mono px-1.5 py-0.5 rounded; background: rgba(255,255,255,0.08); color: #c084fc; }
+  .md-body pre        { @apply rounded-lg p-4 mb-3 overflow-x-auto text-xs; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.08); }
+  .md-body pre code   { @apply bg-transparent text-gray-300 p-0; }
+  .md-body table      { @apply w-full text-xs mb-3 border-collapse; }
+  .md-body th,
+  .md-body td         { @apply px-3 py-2; border: 1px solid rgba(255,255,255,0.1); }
+  .md-body th         { @apply font-semibold; background: rgba(255,255,255,0.05); }
+}

@@ -1,0 +1,24 @@
+from pydantic_settings import BaseSettings
+from functools import lru_cache
+
+
+class Settings(BaseSettings):
+    mongodb_url: str
+    jwt_secret: str
+    jwt_algorithm: str = "HS256"
+    jwt_expire_minutes: int = 10080
+    openai_api_key: str
+    openai_model: str = "gpt-3.5-turbo"
+    cors_origins: str = "http://localhost:5173"
+
+    @property
+    def cors_origins_list(self) -> list[str]:
+        return [o.strip() for o in self.cors_origins.split(",")]
+
+    class Config:
+        env_file = ".env"
+
+
+@lru_cache
+def get_settings() -> Settings:
+    return Settings()

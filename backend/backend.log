@@ -1,0 +1,206 @@
+INFO:     Will watch for changes in these directories: ['e:\\Codec\\Sentiment Analysis on Twitter Data\\backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1920] using WatchFiles
+INFO:     Started server process [18216]
+INFO:     Waiting for application startup.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Codec\Sentiment Analysis on Twitter Data\backend\app.py", line 16, in lifespan
+    await connect_db()
+  File "e:\Codec\Sentiment Analysis on Twitter Data\backend\services\db_service.py", line 16, in connect_db
+    print(f"\u2705 Connected to MongoDB: {settings.DATABASE_NAME}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+ERROR:    Application startup failed. Exiting.
+WARNING:  WatchFiles detected changes in 'routes\chatbot.py'. Reloading...
+ INFO:     Started server process [14084]
+INFO:     Waiting for application startup.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Codec\Sentiment Analysis on Twitter Data\backend\app.py", line 16, in lifespan
+    await connect_db()
+  File "e:\Codec\Sentiment Analysis on Twitter Data\backend\services\db_service.py", line 16, in connect_db
+    print(f"\u2705 Connected to MongoDB: {settings.DATABASE_NAME}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+ERROR:    Application startup failed. Exiting.
+WARNING:  WatchFiles detected changes in 'routes\analyze.py'. Reloading...
+ INFO:     Started server process [11832]
+INFO:     Waiting for application startup.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Codec\Sentiment Analysis on Twitter Data\backend\app.py", line 16, in lifespan
+    await connect_db()
+  File "e:\Codec\Sentiment Analysis on Twitter Data\backend\services\db_service.py", line 16, in connect_db
+    print(f"\u2705 Connected to MongoDB: {settings.DATABASE_NAME}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+ERROR:    Application startup failed. Exiting.
+WARNING:  WatchFiles detected changes in 'routes\chatbot.py'. Reloading...
+ INFO:     Started server process [16240]
+INFO:     Waiting for application startup.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 153, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Codec\Sentiment Analysis on Twitter Data\backend\app.py", line 16, in lifespan
+    await connect_db()
+  File "e:\Codec\Sentiment Analysis on Twitter Data\backend\services\db_service.py", line 16, in connect_db
+    print(f"\u2705 Connected to MongoDB: {settings.DATABASE_NAME}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+ERROR:    Application startup failed. Exiting.
